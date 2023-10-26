@@ -14,7 +14,7 @@ function Minter() {
     const image = data.image[0];
     const imageArray = await image.arrayBuffer();
     const imageByteData = [...new Uint8Array(imageArray)];
-      const newNFTID = await opedCoin_backend.mint(imageByteData, name);
+    const newNFTID = await opedCoin_backend.mint(imageByteData, name);
     console.log(newNFTID.toText()); 
     setNFTPrincipal(newNFTID);
     setloaderHidden(true);

@@ -3,7 +3,7 @@ import Principal "mo:base/Principal";
 import Cycles "mo:base/ExperimentalCycles";
 import Debug "mo:base/Debug";
 import HashMap "mo:base/HashMap";
-import NFTActorClass "../nft/nft";
+import NFTActorClass "../NFT/nft";
 import List "mo:base/List";
 
 actor OpenD {
@@ -14,7 +14,7 @@ actor OpenD {
 
       let owner : Principal = msg.caller;
       Debug.print(debug_show (Cycles.balance()));
-      Cycles.add(100_500_000);
+      Cycles.add(50_000_000_000);
 
       let newNFT = await NFTActorClass.NFT(name, owner, imgData);
 

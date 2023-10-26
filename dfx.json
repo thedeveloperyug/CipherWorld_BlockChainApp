@@ -4,11 +4,11 @@
       "main": "src/opedCoin_backend/main.mo",
       "type": "motoko",
       "dependencies": [
-        "nft"
+        "NFT"
       ]
     },
-    "nft":{
-      "main":"src/nft/nft.mo",
+    "NFT":{
+      "main":"src/NFT/nft.mo",
       "type":"motoko"
     },
     "opedCoin_frontend": {
@@ -31,6 +31,14 @@
       "packtool": ""
     }
   },
+  "dfx": "0.15.1",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+
   "output_env_file": ".env",
   "version": 1
-}
+} 
