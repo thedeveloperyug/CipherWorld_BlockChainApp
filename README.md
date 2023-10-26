@@ -25,3 +25,10 @@ dfx deploy --argument='("CryptoDunks #123", principal "rgoyv-hm25x-5jilf-pypeo-u
 4. Head to localhost
 
 http://localhost:8080/
+
+
+# Screenshots
+
+<img src="./snap3.png" align="center"></img><br>
+<img src="./snap2.png" align="center"></img><br>
+<img src="./snap1.png" align="center"></img>
