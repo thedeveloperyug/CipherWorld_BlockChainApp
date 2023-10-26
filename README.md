@@ -31,13 +31,6 @@ dfx start --background
 dfx deploy
 ```
 
-Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
-
-If you have made changes to your backend canister, you can generate a new candid interface with
-
-```bash
-npm run generate
-```
 
 at any time. This is recommended before starting the frontend development server, and will be run automatically any time you run `dfx deploy`.
 
