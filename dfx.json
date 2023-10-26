@@ -1,23 +1,26 @@
 {
   "canisters": {
-    "opend": {
-      "main": "src/opend/main.mo",
-      "type": "motoko"
+    "opedCoin_backend": {
+      "main": "src/opedCoin_backend/main.mo",
+      "type": "motoko",
+      "dependencies": [
+        "nft"
+      ]
     },
     "nft":{
-      "main":"src/NFT/nft.mo",
+      "main":"src/nft/nft.mo",
       "type":"motoko"
     },
-    "opend_assets": {
+    "opedCoin_frontend": {
       "dependencies": [
-        "opend"
+        "opedCoin_backend"
       ],
       "frontend": {
-        "entrypoint": "src/opend_assets/src/index.html"
+        "entrypoint": "src/opedCoin_frontend/src/index.html"
       },
       "source": [
-        "src/opend_assets/assets",
-        "dist/opend_assets/"
+        "src/opedCoin_frontend/assets",
+        "dist/opedCoin_frontend/"
       ],
       "type": "assets"
     }
@@ -28,12 +31,6 @@
       "packtool": ""
     }
   },
-  "dfx": "0.9.3",
-  "networks": {
-    "local": {
-      "bind": "127.0.0.1:8000",
-      "type": "ephemeral"
-    }
-  },
+  "output_env_file": ".env",
   "version": 1
 }
